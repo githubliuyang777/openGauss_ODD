@@ -10,6 +10,6 @@ export function queryUserInfo(id: string) {
 }
 
 export function getGiteeId() {
-  const url = '/2203ltscontribution/oauth2/userinfo';
+  const url = '/oauth2/userinfo';
   return request.get(url, { global: true }).then((res: AxiosResponse) => res.data);
 }
